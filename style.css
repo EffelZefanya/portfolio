@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 
 body {
-  font-family: 'League Spartan', sans-serif;
+  font-family: "League Spartan", sans-serif;
   background-color: #ffefd5;
+  font-size: large;
 }
 
 .container > section {
@@ -67,9 +68,24 @@ button {
   font-size: 50px;
 }
 
-.special-btn{
+.special-btn {
+  font-weight: 700;
   padding: 0.5em;
-  background-color: #B5CB99;
+  border: solid 2px black;
+  border-image: linear-gradient(to right, #9cb57a, #186F65);
+  border-image-slice: 1;
+  background: -webkit-linear-gradient(1deg, #9cb57a, #186F65);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  transition: all 0.50s ease;
+}
+
+.special-btn:hover {
+  -webkit-text-fill-color: #ffefd5;
+  text-decoration: none;
+  -webkit-background-clip: initial;
+  background: #317156;
 }
 
 /*
