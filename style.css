@@ -1,13 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 
+html,
 body {
+  margin: 0;
+  padding: 0;
   font-family: "League Spartan", sans-serif;
-  background-color: #ffefd5;
   font-size: large;
 }
 
-.container > section {
+.container {
+}
+
+section {
   height: 100vh;
+  background-color: #ffefd5;
+}
+
+section:nth-child(2n) {
+  background-color: #f9e0b8;
 }
 
 .container > * {
@@ -55,12 +65,23 @@ nav > .navbar-content > a {
   gap: 1em;
 }
 
+#greeting {
+  font-weight: 700px;
+  font-size: 45px;
+}
+
 button {
   max-width: 10em;
   background: none;
   font-size: 100%;
   font-family: inherit;
   border: 0;
+}
+
+.green-gradient-color {
+  background: -webkit-linear-gradient(1deg, #9cb57a, #186f65);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title {
@@ -72,13 +93,10 @@ button {
   font-weight: 700;
   padding: 0.5em;
   border: solid 2px black;
-  border-image: linear-gradient(to right, #9cb57a, #186F65);
+  border-image: linear-gradient(to right, #9cb57a, #186f65);
   border-image-slice: 1;
-  background: -webkit-linear-gradient(1deg, #9cb57a, #186F65);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
-  transition: all 0.50s ease;
+  transition: all 0.5s ease;
 }
 
 .special-btn:hover {
