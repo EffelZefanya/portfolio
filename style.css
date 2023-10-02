@@ -8,7 +8,7 @@ body {
   font-size: large;
 }
 
-section{
+section {
   height: 100%;
   background-color: #ffefd5;
 }
@@ -66,7 +66,7 @@ nav > .navbar-content > a {
   gap: 1em;
 }
 
-#about-me{
+#about-me {
   height: 100%;
 }
 
@@ -83,6 +83,35 @@ nav > .navbar-content > a {
 #greeting {
   font-weight: 700px;
   font-size: 45px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+.skill-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+  background-color: #f9e0b8;
+  padding: 1em;
+  margin: 2em;
+  margin: 20px;
+  min-width: 5em;
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  box-shadow: 0 1px 2px #12654e;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.skill-box:hover {
+  box-shadow: 0 5px 15px #12654e;
 }
 
 button {
