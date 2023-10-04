@@ -31,7 +31,7 @@ nav {
   justify-content: space-between;
   overflow: hidden;
   background-color: #186f65;
-  position: fixed;
+  position: sticky;
   left: 0;
   top: 0;
   width: 100%;
@@ -76,13 +76,85 @@ nav > .navbar-content > a {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
   gap: 2em;
 }
 
 #greeting {
   font-weight: 700px;
   font-size: 45px;
+}
+
+#projects > .project-container {
+  display: flex;
+  padding: 2em;
+  max-height: 50%;
+  gap: 50px;
+}
+
+#projects > .project-container:nth-child(2n) {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+#projects > .project-container > .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+#projects > .project-container > .text-container > .buttons {
+  display: flex;
+  gap: 10px;
+}
+
+#projects > .project-container > .image-container > img {
+  box-shadow: 1.5px 1.5px 3px #0000005a, -1px -1px 3px #0000005a;
+  width: 100%;
+  /* padding: 10px; */
+}
+
+#projects button {
+  cursor: pointer;
+}
+
+#projects .project-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.see-live-btn {
+  font-weight: 700;
+  padding: 5px;
+  border: solid 2px black;
+  border-image: linear-gradient(to bottom, #9cb57a, #186f65);
+  border-image-slice: 1;
+  background-size: 200% 100%;
+  transition: all 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: color 0.5s ease;
+}
+
+.source-code-btn {
+  padding: 5px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: color 0.5s ease;
+}
+
+.source-code-btn:hover {
+  box-shadow: 1.5px 1.5px 3px rgba(174, 174, 192, 0.4), -1px -1px 3px #fff;
+}
+
+.see-live-btn:hover {
+  -webkit-text-fill-color: #ffefd5;
+  text-decoration: none;
+  -webkit-background-clip: initial;
+  background: linear-gradient(to bottom, #9cb57a, #186f65);
 }
 
 .skills-container {
@@ -130,7 +202,7 @@ button {
 
 .title {
   text-align: center;
-  font-size: 50px;
+  font-size: 65px;
 }
 
 .special-btn {
@@ -141,13 +213,17 @@ button {
   border-image-slice: 1;
   background-size: 200% 100%;
   transition: all 0.5s ease;
+  -webkit-transition: 0.5s ease;
+  -moz-transition: 0.5s ease;
+  -ms-transition: 0.5s ease;
+  -o-transition: color 0.5s ease;
 }
 
 .special-btn:hover {
   -webkit-text-fill-color: #ffefd5;
   text-decoration: none;
   -webkit-background-clip: initial;
-  background: #317156;
+  background: linear-gradient(to right, #9cb57a, #186f65);
 }
 
 /*
