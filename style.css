@@ -123,6 +123,12 @@ nav > .navbar-content > a {
   font-weight: bold;
 }
 
+#contact > .contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+
 .see-live-btn {
   font-weight: 700;
   padding: 5px;
