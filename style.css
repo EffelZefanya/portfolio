@@ -108,6 +108,11 @@ nav > .navbar-content > a {
   gap: 10px;
 }
 
+#projects > .project-container > .image-container {
+  display: flex;
+  align-items: center;
+}
+
 #projects > .project-container > .image-container > img {
   box-shadow: 1.5px 1.5px 3px #0000005a, -1px -1px 3px #0000005a;
   width: 100%;
